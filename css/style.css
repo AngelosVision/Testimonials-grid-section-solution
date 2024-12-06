@@ -29,6 +29,7 @@ body {
 }
 
 .container {
+  margin: 50px;
   width: 1120px;
   display: grid;
   height: auto;
@@ -51,18 +52,13 @@ body {
   flex-direction: column;
 }
 
-.bg-img {
-  position: absolute;
-  top: 0;
-  right: 13%;
-  z-index: -1;
-}
-
 .card-1 {
   background-color: var(--moderate-violet);
   grid-area: card-1;
+  background-image: url(../images/bg-pattern-quotation.svg);
   background-repeat: no-repeat;
   position: relative;
+  background-position: right 13% top ;
 }
 
 .card-2 {
@@ -150,7 +146,6 @@ body {
   .container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin: 50px 0;
     max-width: 90%;
     grid-template-areas:
       "card-4 card-4 card-2"
@@ -163,7 +158,6 @@ body {
   .container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
-    margin: 50px 0;
     max-width: 90%;
     grid-template-areas:
       "card-1 card-1"
